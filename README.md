@@ -39,6 +39,15 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Rodar o arquivo docker-compose:
+
+Necessário rodar o arquivo `docker-composer.yml` para levantar a VM com o MariaDB.
+
+Abrir o terminar na pasta onde consta o arquivo e execute o comando:
+`docker-compose up -d`
+
+Após este, entrar no CLI da VM do MariaDB e executar os comandos da pasta `.\env\start.sql`
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
