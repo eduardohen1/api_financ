@@ -1,0 +1,18 @@
+version: '3.3'
+services:
+  mariadb:
+    image: mariadb
+    volumes:
+      - mariadb:/var/lib/mysql      
+    env_file:
+      - ./env/mariadb_db.env      
+    ports:
+      - '3308:3306'
+    networks:
+      - netMaria
+volumes:
+  mariadb:
+    external: true
+networks:
+  netMaria:
+    driver: bridge
